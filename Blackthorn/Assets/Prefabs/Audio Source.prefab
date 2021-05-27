@@ -1,0 +1,216 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5578316878596201871
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5578316878596201869}
+  - component: {fileID: 5578316878596201868}
+  - component: {fileID: 5578316878596201906}
+  m_Layer: 0
+  m_Name: Audio Source
+  m_TagString: AudioSource
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5578316878596201869
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5578316878596201871}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &5578316878596201868
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5578316878596201871}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 5b84fa483a261dc4e8657b05ae65b6ee,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: 75f14434f113f8a438b8f655702305b8, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.811
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &5578316878596201906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5578316878596201871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b74eab778862945a04a917bfbb5402, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: button_click
+    clip: {fileID: 8300000, guid: e45bf97c69f89504499efbe68e5b81c3, type: 3}
+    volume: 0.535
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: checkpoint
+    clip: {fileID: 8300000, guid: 2bec2f7ca62c0f04aacbffaac040243c, type: 3}
+    volume: 0.623
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: collectable
+    clip: {fileID: 8300000, guid: ca4470f046b46234794373295fa95084, type: 3}
+    volume: 0.615
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: slime_damage
+    clip: {fileID: 8300000, guid: 932ee364c29cf0e4486a00cdf938e714, type: 3}
+    volume: 0.644
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: slime_splitting
+    clip: {fileID: 8300000, guid: e3a87e016ba00234aa4bf0d8f35a8b7d, type: 3}
+    volume: 0.608
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: slime_jump_start
+    clip: {fileID: 8300000, guid: cbde3fb76f8492b4d80ac3ef5520ef47, type: 3}
+    volume: 0.623
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: slime_jump_end
+    clip: {fileID: 8300000, guid: 00532670daf0ae549a92f88d3cbe29a0, type: 3}
+    volume: 0.63
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: gum_shot
+    clip: {fileID: 8300000, guid: 102cab3f7bc96244787bd3d709cc0c3d, type: 3}
+    volume: 0.637
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: gumgun_shot
+    clip: {fileID: 8300000, guid: cdd49ef44d6eb454c94311ac9020a921, type: 3}
+    volume: 0.332
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: acid_drip
+    clip: {fileID: 8300000, guid: 102cab3f7bc96244787bd3d709cc0c3d, type: 3}
+    volume: 0.064
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: carnivorous_plant
+    clip: {fileID: 8300000, guid: c7555999df51af545bc18b5a51b8042e, type: 3}
+    volume: 0.608
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: cogumelo
+    clip: {fileID: 8300000, guid: 68070213ba963ce47911c4aa17981691, type: 3}
+    volume: 0.608
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
